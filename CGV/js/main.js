@@ -1,9 +1,16 @@
-"use strict!";
-
-const mainMenu = document.querySelector(".main_menu");
-const menuMovie = document.querySelector(".main_menu .movie");
-
-// mainMenu.addEventListener("click", function () {
-//   console.log("ok");
-//   menuMovie.style.left = "50px";
-// });
+// // SECTION: BANNER;
+new Swiper(".banner .swiper-container", {
+  slidesPerView: 3,
+  centeredSlides: true,
+  spaceBetween:40,
+  loop: true,
+  autoplay: false,
+  pagination: {
+    el: ".banner .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    prevEl: ".banner .swiper-prev",
+    nextEl: ".banner .swiper-next",
+  },
+});
