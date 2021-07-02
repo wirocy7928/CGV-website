@@ -25,6 +25,7 @@
       src="https://kit.fontawesome.com/09805534ef.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="./js/youtube.js"></script>
     <script defer src="./js/main.js"></script>
   </head>
@@ -38,6 +39,7 @@
           <li class="sub_menu_item">Follow</li>
           <li class="sub_menu_item">알뜰한 영화관람법</li>
         </ul>
+        <div class="sub_menu_all">
         <ul class="sub_menu">
           <li class="sub_menu_item">로그인</li>
           <li class="sub_menu_item">회원가입</li>
@@ -47,12 +49,17 @@
           <li class="sub_menu_item">고객센터</li>
           <li class="sub_menu_item">ENGLISH TICKETING</li>
         </ul>
+        <div class="search">
+          <input type="text">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
       </div>
       <div class="inner">
         <div class="main_menu">
-          <div class="main_menu_item movie">
+          <div class="main_menu_item">
             <div class="item_name">
-              <h5>MOVIE <span>[영화]</span></h5>
+              <h5>MOVIE  <span>  | 영화</span></h5>
               <!-- <i class="fas fa-caret-down"></i> -->
             </div>
             <ul class="item_contents">
@@ -62,9 +69,9 @@
               <li><a href="#">CGV아트하우스</a></li>
             </ul>
           </div>
-          <div class="main_menu_item reservation">
+          <div class="main_menu_item">
             <div class="item_name">
-              <h5>RESERVATION <span>[예약]</span></h5>
+              <h5>RESERVATION  <span>  | 예약</span></h5>
               <!-- <i class="fas fa-caret-down"></i> -->
             </div>
             <ul class="item_contents">
@@ -72,9 +79,9 @@
               <li><a href="#">상영시간표</a></li>
             </ul>
           </div>
-          <div class="main_menu_item theater">
+          <div class="main_menu_item">
             <div class="item_name">
-              <h5>THEATER <span>[극장]</span></h5>
+              <h5>THEATER  <span>  | 극장</span></h5>
               <!-- <i class="fas fa-caret-down"></i> -->
             </div>
             <ul class="item_contents">
@@ -83,9 +90,9 @@
               <li><a href="#">CLUB서비스</a></li>
             </ul>
           </div>
-          <div class="main_menu_item event">
+          <div class="main_menu_item">
             <div class="item_name">
-              <h5>EVENT&CULTURE <span>[이벤트&컬처]</span></h5>
+              <h5>EVENT&CULTURE  <span>  | 이벤트&컬처</span></h5>
 
               <!-- <i class="fas fa-caret-down"></i> -->
             </div>
@@ -109,17 +116,24 @@
               <a href="#"
                 ><img class="cgv_logo" src="./imgs/cgv_color.png" alt=""
               /></a>
-              <a class="home_main_btn" href="#">
-                READ MORE<i class="fas fa-caret-right"></i>
+              <div class="btn">
+              <a class="home_main_btn front" href="#">
+                <p>READ</p>
+                <p>MORE</p>
+                <i class="fas fa-caret-right"></i>
               </a>
+              <a class="home_main_btn back" href="#">
+                
+              </a>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="banner">
+    <section class="banner scroll-spy">
      
-      <div class="swiper-container">
+      <div class="swiper-container back-to-position to-top">
         <div class="swiper-wrapper">
         <div class="swiper-slide">
             <img src="./imgs/banner1.jpg" alt="1" />
@@ -154,8 +168,8 @@
       <div class="inner">
       <h2>무비셀렉션</h2>
       <h4>MOVIE SELECTION</h4>
-      <div class="movie_container">
-       <div class="item poster">
+      <div class="movie_container scroll-spy">
+       <div class="item poster back-to-position to-right-bottom">
          <img src="./imgs/poster5.jpeg" alt="joker">
          <div class="item_explanation">
            <div class="item_explanation_wrapper">
@@ -171,47 +185,47 @@
           </div>
          </div>
        </div>
-       <div class="item poster">
-         <img src="./imgs/poster2.jpg" alt="call me by your name">
+       <div class="item poster back-to-position to-right-top">
+         <img  src="./imgs/poster2.jpg" alt="call me by your name">
          <div class="item_explanation">
           <div class="item_explanation_wrapper">
-          <h3>조커</h3>
-          <h5>Joker <span>| 예매율 20%</span></h5>
-          <p>스릴러 | 미국 | 123분</p>
-          <p>감독: 토드 필립스</p>
-          <p>배우: 호아킨 피닉스, 재지 비츠¨</p>
-          <p>개봉: 2019.10.02</p>
+          <h3>콜 미 바이 유어 네임</h3>
+          <h5>Call Me By Your Name <span>| 예매율 20%</span></h5>
+          <p>드라마 | 이탈리아, 프랑스, 브라질, 미국 | 132분</p>
+          <p>감독: 루카 구아다니노</p>
+          <p>배우: 티모시 샬라메, 아미 해머¨</p>
+          <p>개봉: 2018.03.22</p>
           <a class="btn" href="#">
             READ MORE
           </a>
           </div>
        </div>
        </div>
-       <div class="item poster">
+       <div class="item poster back-to-position to-right-bottom ">
          <img src="./imgs/poster7.jpg" alt="her">
          <div class="item_explanation">
           <div class="item_explanation_wrapper">
-          <h3>조커</h3>
-          <h5>Joker <span>| 예매율 20%</span></h5>
-          <p>스릴러 | 미국 | 123분</p>
-          <p>감독: 토드 필립스</p>
-          <p>배우: 호아킨 피닉스, 재지 비츠¨</p>
-          <p>개봉: 2019.10.02</p>
+          <h3>그녀</h3>
+          <h5>Her <span>| 예매율 20%</span></h5>
+          <p>드라마 | 미국 | 125분</p>
+          <p>감독: 스파이크 존즈</p>
+          <p>배우: 호아킨 피닉스, 에이미 아담스, 루니 마라, 스칼릿 조핸슨¨</p>
+          <p>개봉: 2014.05.22</p>
           <a class="btn" href="#">READ MORE</a>
           </div>
        </div>
        </div>
-       <div class="item poster">
+       <div class="item poster back-to-position to-right-top">
          <img src="./imgs/poster4.jpg" alt="bohemian rhapsody"> 
          <div class="item_explanation">
          <div class="item_explanation_wrapper">
           
-          <h3>조커</h3>
-          <h5>Joker <span>| 예매율 20%</span></h5>
-          <p>스릴러 | 미국 | 123분</p>
-          <p>감독: 토드 필립스</p>
-          <p>배우: 호아킨 피닉스, 재지 비츠¨</p>
-          <p>개봉: 2019.10.02</p>
+          <h3>보헤미안 랩소디</h3>
+          <h5>Bohemian Rhapsody <span>| 예매율 20%</span></h5>
+          <p>드라마 | 미국, 영국 | 134분</p>
+          <p>감독: 브라이언 싱어</p>
+          <p>배우: 라미 말렉, 루시 보인턴, 귈림 리, 벤 하디, 조셉 마젤로¨</p>
+          <p>개봉: 2018.10.31</p>
           <a class="btn" href="#">
             READ MORE
           </a>
@@ -219,13 +233,13 @@
        </div></div>
    
       </div>
-      <div class="chart_container">
-        <div class="item chart">
-          <img src="./imgs/chart_poster3.jpg" alt="joker_face">
+      <div class="chart_container  ">
+        <div class="item chart scroll-spy">
+          <img  class="back-to-position to-right" src="./imgs/chart_poster3.jpg" alt="joker_face">
         </div>
         
-         <div class="item chart">
-           <div class="item_explanation_wrapper">
+         <div class="item chart scroll-spy">
+           <div class="item_explanation_wrapper back-to-position to-left">
            <h2>NO.1</h2>
            <h3>조커</h3>
            <h5>Joker <span>| 예매율 20%</span></h5>
@@ -236,38 +250,140 @@
            <a class="btn" href="#">예매하기</a>
            </div>
           </div>
-        <div class="item chart">
-          <div class="item_explanation_wrapper">
-          <h2>NO.1</h2>
-          <h3>조커</h3>
-          <h5>Joker <span>| 예매율 20%</span></h5>
-          <p>스릴러 | 미국 | 123분</p>
-          <p>감독: 토드 필립스</p>
-          <p>배우: 호아킨 피닉스, 재지 비츠¨</p>
-          <p>개봉: 2019.10.02</p>
+        <div class="item chart scroll-spy">
+          <div class="item_explanation_wrapper back-to-position to-right">
+          <h2>NO.2</h2>
+          <h3>보헤미안 랩소디</h3>
+          <h5>Bohemian Rhapsody <span>| 예매율 20%</span></h5>
+          <p>드라마 | 미국, 영국 | 134분</p>
+          <p>감독: 브라이언 싱어</p>
+          <p>배우: 라미 말렉, 루시 보인턴, 귈림 리, 벤 하디, 조셉 마젤로¨</p>
+          <p>개봉: 2018.10.31</p>
           <a class="btn" href="#">예매하기</a>
           </div>
         </div>
-        <div class="item chart">
-          <img src="./imgs/chart_poster2.jpg" alt="bohemian rhapsody">
+        <div class="item chart scroll-spy">
+          <img class="back-to-position to-left" src="./imgs/chart_poster2.jpg" alt="bohemian rhapsody">
         </div>
-        <div class="item chart">
-          <img src="./imgs/chart_poster4.jpg" alt="call me by your name">
+        <div class="item chart scroll-spy">
+          <img class="back-to-position to-right" src="./imgs/chart_poster4.jpg" alt="call me by your name">
         </div>
-        <div class="item chart">
-          <div class="item_explanation_wrapper">
-          <h2>NO.1</h2>
-          <h3>조커</h3>
-          <h5>Joker <span>| 예매율 20%</span></h5>
-          <p>스릴러 | 미국 | 123분</p>
-          <p>감독: 토드 필립스</p>
-          <p>배우: 호아킨 피닉스, 재지 비츠¨</p>
-          <p>개봉: 2019.10.02</p>
+        <div class="item chart scroll-spy">
+          <div class="item_explanation_wrapper back-to-position to-left">
+          <h2>NO.3</h2>
+          <h3>콜 미 바이 유어 네임</h3>
+          <h5>Call Me By Your Name <span>| 예매율 20%</span></h5>
+          <p>드라마 | 이탈리아, 프랑스, 브라질, 미국 | 132분</p>
+          <p>감독: 루카 구아다니노</p>
+          <p>배우: 티모시 샬라메, 아미 해머¨</p>
+          <p>개봉: 2018.03.22</p>
           <a class="btn" href="#">예매하기</a>
           </div>
         </div>
       </div>
     </div>
     </section>
+    <section class="eventdiscount">
+      <div class="inner">
+        <h2>이벤트</h2>
+        <h4>event</h4>
+        <div class="event_container scroll-spy">
+          <div class="item event back-to-position to-top delay-0">
+            <img src="./imgs/info_special3.jpg" alt="1">
+            <div class="item_readmore">
+              <a class="btn" href="#">
+                READ MORE
+              </a>
+            </div>
+
+          </div> 
+          <div class="item event back-to-position to-top delay-1">
+            <img src="./imgs/info_special1.jpg" alt="2">
+            <div class="item_readmore">
+              <a class="btn" href="#">
+                READ MORE
+              </a>
+            </div>
+          </div> 
+          <div class="item event back-to-position to-top delay-2">
+            <img src="./imgs/info_special2.png" alt="3">
+            <div class="item_readmore">
+              <a class="btn" href="#">
+                READ MORE
+              </a>
+            </div>
+          </div> 
+         
+          <div class="item event back-to-position to-top delay-3">
+            <img src="./imgs/info_membership1.jpg" alt="4">
+            <div class="item_readmore">
+              <a class="btn" href="#">
+                READ MORE
+              </a>
+            </div>
+          </div> 
+          <div class="item event back-to-position to-top delay-4">
+            <img src="./imgs/info_membership2.jpg" alt="5">
+            <div class="item_readmore">
+              <a class="btn" href="#">
+                READ MORE
+              </a>
+            </div>
+          </div> 
+          <div class="item event back-to-position to-top delay-5">
+            <img class="cgv_logo_white" src="./imgs/cgv_white.png" alt="6">
+            
+        
+          </div> 
+          <div class="item event back-to-position to-top delay-6">
+            <img src="./imgs/info_membership3.jpg" alt="7">
+            <div class="item_readmore">
+              <a class="btn" href="#">
+                READ MORE
+              </a>
+            </div>
+          </div> 
+          <div class="item event back-to-position to-top delay-7">
+            <img src="./imgs/info_item8.jpg" alt="8">
+            <div class="item_readmore">
+              <a class="btn" href="#">
+                READ MORE
+              </a>
+            </div>
+          </div> 
+          <div class="item event back-to-position to-top delay-8">
+            <img src="./imgs/mask.png" alt="9">
+            
+          </div> 
+        </div>
+      </div>
+    </section>
+    <section class="notice_bar">
+      <div class="inner">
+      <h2>공지사항</h2>
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="swiper-slide-notice" href="#">
+            [[극장]] [CGV광주상무] 6/27(일) 대관 행사로 인한 10시~17시 시간대 예매 불가 안내
+          </a></div>
+         
+            <div class="swiper-slide">
+              <a class="swiper-slide-notice" href="#">
+                [[극장]] [CGV해운대]상영관 리뉴얼(모션베드)공사로 인한 영업 일시중단 안내
+              </a>
+            </div>
+          <div class="swiper-slide">
+            <a class="swiper-slide-notice" href="#">
+              [[극장]] [CGV소풍]관람완료티켓 인증시, 투썸 50%할인 !
+            </a>
+          </div>
+         
+        </div>
+        
+      </div>
+    </div>
+    </section>
+    
   </body>
 </html>
