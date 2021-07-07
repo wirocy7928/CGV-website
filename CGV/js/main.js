@@ -40,6 +40,19 @@ new Swiper(".notice_bar .mySwiper", {
   direction: "vertical",
 });
 
+// GSAP
+function floatingObject(selector) {
+  //gsap.to(요소, 시간, 옵션)
+  gsap.to(selector, 1, {
+    y: -40,
+    rotate: 50,
+    repeat: -1,
+    ease: Power1.easeInOut,
+    yoyo: true,
+  });
+}
+floatingObject(".floating");
+
 // SCROLL MAGIC
 const spyEl = document.querySelectorAll(".scroll-spy");
 spyEl.forEach(function (spyEl) {

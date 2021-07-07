@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
     <title>영화 그 이상의 감동, CGV</title>
     <link rel="icon" href="./imgs/favicon.png" />
     <link
@@ -25,6 +25,7 @@
       src="https://kit.fontawesome.com/09805534ef.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="./js/youtube.js"></script>
     <script defer src="./js/main.js"></script>
@@ -34,20 +35,20 @@
     <header>
       <div class="inner">
         <ul class="sub_menu">
-          <li class="sub_menu_item">CGV APP</li>
-          <li class="sub_menu_item">Like</li>
-          <li class="sub_menu_item">Follow</li>
-          <li class="sub_menu_item">알뜰한 영화관람법</li>
+          <li class="sub_menu_item"><a href="#">CGV APP</a></li>
+          <li class="sub_menu_item"><a href="#">Like</a></li>
+          <li class="sub_menu_item"><a href="#">Follow</a></li>
+          <li class="sub_menu_item"><a href="#">알뜰한 영화관람법</a></li>
         </ul>
         <div class="sub_menu_all">
         <ul class="sub_menu">
-          <li class="sub_menu_item">로그인</li>
-          <li class="sub_menu_item">회원가입</li>
-          <li class="sub_menu_item">My CGV</li>
-          <li class="sub_menu_item">VIP LOUNGE</li>
-          <li class="sub_menu_item">CLUB서비스</li>
-          <li class="sub_menu_item">고객센터</li>
-          <li class="sub_menu_item">ENGLISH TICKETING</li>
+          <li class="sub_menu_item"><a href="#">로그인</a></li>
+          <li class="sub_menu_item"><a href="#">회원가입</a></li>
+          <li class="sub_menu_item"><a href="#">My CGV</a></li>
+          <li class="sub_menu_item"><a href="#">VIP LOUNGE</a></li>
+          <li class="sub_menu_item"><a href="#">CLUB서비스</a></li>
+          <li class="sub_menu_item"><a href="#">고객센터</a></li>
+          <li class="sub_menu_item"><a href="#">ENGLISH TICKETING</a></li>
         </ul>
         <div class="search">
           <input type="text">
@@ -166,8 +167,11 @@
     <!-- SECTION:MOVIESELECTION -->
     <section class="movieselection">
       <div class="inner">
-      <h2>무비셀렉션</h2>
-      <h4>MOVIE SELECTION</h4>
+        <div class="title scroll-spy">
+          <img class="back-to-position floating" src="./imgs/Asset 3.png" alt="symbol">
+          <h2 class="back-to-position">무비셀렉션</h2>
+          <h4 class="back-to-position">MOVIE SELECTION</h4>
+        </div>
       <div class="movie_container scroll-spy">
        <div class="item poster back-to-position to-right-bottom">
          <img src="./imgs/poster5.jpeg" alt="joker">
@@ -263,10 +267,10 @@
           </div>
         </div>
         <div class="item chart scroll-spy">
-          <img class="back-to-position to-left" src="./imgs/chart_poster2.jpg" alt="bohemian rhapsody">
+          <img class="back-to-position to-left " src="./imgs/chart_poster2.jpg" alt="bohemian rhapsody">
         </div>
         <div class="item chart scroll-spy">
-          <img class="back-to-position to-right" src="./imgs/chart_poster4.jpg" alt="call me by your name">
+          <img class="back-to-position to-right " src="./imgs/chart_poster4.jpg" alt="call me by your name">
         </div>
         <div class="item chart scroll-spy">
           <div class="item_explanation_wrapper back-to-position to-left">
@@ -283,10 +287,13 @@
       </div>
     </div>
     </section>
-    <section class="eventdiscount">
+    <section class="event-discount">
       <div class="inner">
-        <h2>이벤트</h2>
-        <h4>event</h4>
+        <div class="title scroll-spy">
+          <img class="back-to-position floating" src="./imgs/Asset 3.png" alt="symbol">
+        <h2 class="back-to-position">이벤트</h2>
+        <h4 class="back-to-position">event</h4>
+      </div>
         <div class="event_container scroll-spy">
           <div class="item event back-to-position to-top delay-0">
             <img src="./imgs/info_special3.jpg" alt="1">
@@ -384,6 +391,76 @@
       </div>
     </div>
     </section>
-    
+    <footer>
+      <div class="inner">
+        <ul class="footer_menu">
+          <li class="footer_menu_item">회사소개</li>
+          <li class="footer_menu_item">IR</li>
+          <li class="footer_menu_item">채용정보</li>
+          <li class="footer_menu_item">광고/프로모션문의</li>
+          <li class="footer_menu_item">제휴문의</li>
+          <li class="footer_menu_item">출점문의</li>
+          <li class="footer_menu_item">이용약관</li>
+          <li class="footer_menu_item">편성기준</li>
+          <li class="footer_menu_item">개인정보처리방침</li>
+          <li class="footer_menu_item">법적고지</li>
+          <li class="footer_menu_item">이메일주소무단수집거부</li>
+          <li class="footer_menu_item">윤리경영</li>
+          <li class="footer_menu_item">사이버감사실</li>
+          <li class="footer_menu_item">사이트맵</li>
+        </ul>
+        <div class="footer_contents">
+          <img src="./imgs/cgv_white.png" alt="cgv_logo_white">
+          <div class="footer_info">
+            <p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)</p>
+            <p>대표이사 : 허민회 | 사업자등록번호 : 104-81-45690 | 통신판매업신고번호 : 2017-서울용산-0662 </p>
+            <p>호스팅사업자 : CJ올리브네트웍스 | 개인정보보호 책임자 : 심준범 | 대표이메일 : cjcgvmaster@cj.net | CGV고객센터 : 1544-1122</p>
+            <button>사업자정보확인</button>
+            <div class="footer_info_social">
+              <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            </div>
+          </div>
+          <div class="footer_select">
+            <select id="familysite">
+              <option value="">계열사 바로가기</option>
+              <optgroup label="CJ그룹">
+                <option value="http://www.cj.net">CJ주식회사</option>
+              </optgroup>
+              <optgroup label="식품 & 식품서비스">
+                <option value="https://www.cj.co.kr/kr/index">CJ제일제당</option>
+                <option value="https://www.cjfoodcille.co.kr/main.asp">CJ푸드빌</option>
+                <option value="https://www.cjfreshway.com/index.jsp">CJ프레시웨이</option>
+              </optgroup>
+              <optgroup label="생명공학">
+                <option value="https://www.cj.co.kr/kr/about/business/bio">CJ제일제당 BIO사업부문</option>
+                <option value="https://www.cj.co.kr/kr/about/business/bio">CJ Feed&amp;Card</option>
+              </optgroup>
+              <optgroup label="물류 & 신유통">
+                <option value="https://www.cjlogistics.com/ko/main">CJ대한통운</option>
+                <option value="http://www.cjenc.co.kr/kr/Default.asp">CJ대한통운 건설부문</option>
+                <option value="https://www.oliveyoung.co.kr/store/company/brandStory.do">CJ올리브영</option>
+                <option value="https://www.cjolivenetworks.co.kr:449/">CJ올리브네트웍스</option>
+                <optgroup label="물류 & 신유통">
+                  <option value="https://www.cjlogistics.com/ko/main">CJ대한통운</option>
+                  <option value="http://www.cjenc.co.kr/kr/Default.asp">CJ대한통운 건설부문</option>
+                  <option value="https://www.oliveyoung.co.kr/store/company/brandStory.do">CJ올리브영</option>
+                  <option value="https://www.cjolivenetworks.co.kr:449/">CJ올리브네트웍스</option>
+                  <option value="https://www.cjoshopping.com:9002/index.asp">CJ ENM 커머스부문</option>
+                  </optgroup>
+              </optgroup>
+              <optgroup label="엔터테인먼트 & 미디어">
+                <option value="https://www.cjem.net:433/main/?locale=ko">CJ ENM 엔터테인먼트부문</option>
+                <option value="http://corp.cgv.co.kr/company/ir/manage/manage_list.aspx ">CJ CGV</option>
+                <option value="http://www.cjpowercast.com/">CJ파워캐스트</option>
+              </optgroup>
+            </select>
+            <button type="button" title="새창" onclick="goFamilySite()">GO</button>
+          </div>
+        </div>
+      </div>
+
+    </footer>
   </body>
 </html>
