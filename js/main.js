@@ -16,7 +16,7 @@ searchInputEl.addEventListener("blur", function () {
 
 // SECTION: BANNER;
 new Swiper(".banner .swiper-container", {
-  slidesPerView: 3,
+  slidesPerView: 5,
   centeredSlides: true,
   spaceBetween: 40,
   loop: true,
