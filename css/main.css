@@ -1020,7 +1020,7 @@ footer > .inner .footer_contents button:hover {
       url("../imgs/사각형\ 2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: ;
+    background-position: center;
   }
   .chart_container .item.chart .item_explanation_wrapper .btn {
     width: 130px;
@@ -1361,11 +1361,15 @@ footer > .inner .footer_contents button:hover {
     max-width: 700px;
     margin: 200px auto 0;
   }
-  .item_explanation_wrapper h2 {
+  .chart_container .item_explanation_wrapper h2 {
     font-size: 50px;
+    margin: 20px 0;
   }
   .chart_container .item.chart {
     width: 700px;
+    height: 295px;
+  }
+  .chart_container .item.chart .item_explanation_wrapper {
     height: 295px;
   }
 
